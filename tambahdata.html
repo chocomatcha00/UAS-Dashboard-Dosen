@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="https://home.amikom.ac.id/media/2019/12/cropped-amikom-512-32x32.png">
+    <title>TAMBAH DATA</title>
+    <style>
+        label {
+            position: absolute;
+            top: -15px;
+            left: 19px;
+            background-color: #5f43b2;
+            border-radius: 8px;
+            font-size: 0.92em;
+            color: white;
+            padding: 0 5px;
+        }
+    </style>
+</head>
+
+<body style="background-color: #fefdfd;">
+    <nav class="navbar navbar-light d-md-flex align-items-center" style="background-color: #3a3153;">
+        <div class="container-fluid justify-content-between">
+            <div class="text-white d-flex align-items-center gap-2">
+                <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#demo"><img
+                        src="https://img.icons8.com/?size=100&id=36389&format=png&color=FFFFFF" width="20"
+                        height="20"></button>
+                <img src="images/1.png" width="30" height="30" class="d-inline-block align-text-top">
+                <p class="m-0 fw-bold" style="font-size: 0.938rem;">UNIVERSITAS AMIKOM YOGYAKARTA</p>
+            </div>
+            <div class="text-white d-flex align-items-center gap-2">
+                <p class="m-0" style="font-size: 0.938rem;">Adhminingsih | 23.01.5068 | Dashboard</p>
+                <button class="btn text-white btn-danger rounded-3" style="font-size:0.75rem;"><img
+                        src="https://img.icons8.com/?size=100&id=22112&format=png&color=FFFFFF" width="15"
+                        height="15">Log Out</button>
+            </div>
+        </div>
+    </nav>
+
+    <p class="col-10 offset-1 fw-bold my-4" style="font-size: 1.375rem;">TAMBAH DAN EDIT NILAI MAHASISWA</p>
+
+    <div class="container-fluid rounded-2 col-10 offset-1 p-3" style="background-color: #b1aebb;">
+        <p class="fw-bold">Input Kelas Baru</p>
+        <p class="text-start fst-italic my-1">Anda dapat langsung <b>Input Nilai Mahasiswa</b> jika kelas telah tersedia.</p>
+        <table class="table-fluid" style="width:75%;border-spacing:30px; font-size: 1rem;">
+            <tr>
+                <td style="width: 25%;">Tahun Ajaran</td>
+                <td>:</td>
+                <td> <input type="text" class="form-control p-1" id="tahunajaran"
+                        style="font-size: 15px; border-radius: 8px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 25%;">Mata Kuliah</td>
+                <td>:</td>
+                <td> <input type="text" class="form-control p-1" id="matakuliah"
+                        style="font-size: 15px; border-radius: 8px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 25%;">Nama Kelas</td>
+                <td>:</td>
+                <td> <input type="text" class="form-control p-1" id="namakelas"
+                        style="font-size: 15px; border-radius: 8px">
+                </td>
+            </tr>
+        </table>
+        
+        <div class="container-fluid offset-5 text-center mt-2">
+            <button class="btn p-1 fw-bold" style="background-color: orange; width:130px; font-size:16px; border-radius: 8px">SIMPAN</button>
+        </div>
+    </div>
+
+    <div class="container-fluid rounded-2 col-10 offset-1 mt-2 p-3" style="background-color: #b1aebb;">
+        <p class="fw-bold">Input Nilai Mahasiswa</p>
+        <span class="d-flex mt-4 mb-3 gap-3">
+            <div class="form-group position-relative">
+                <label for="firstName" class="form-label">Tahun Ajaran</label>
+                <input type="text" class="form-control p-1 text-center" id="tahunajaran"  style="font-size: 15px; border-radius: 8px; width:130px">
+            </div>
+            <div class="form-group position-relative">
+                <label for="firstName" class="form-label">Mata Kuliah</label>
+                <input type="text" class="form-control p-1 text-center" id="matakuliah"   style="font-size: 15px; border-radius: 8px; width:130px">
+            </div>
+            <div class="form-group position-relative">
+                <label for="firstName" class="form-label">Kode Kelas</label>
+                <input type="text" class="form-control p-1 text-center" id="kode"  style="font-size: 15px; border-radius: 8px; width:130px">
+            </div>
+            <div>
+                <button class="btn p-1 align-item-bottom fw-bold" style="background-color: orange; width:130px; font-size: 16px; border-radius: 8px; ">Tetapkan</button>
+            </div>
+        </span>
+
+        <table class="table-fluid" style="width:75%;border-spacing:30px; font-size: 1rem;">
+            <tr>
+                <td style="width: 25%;">Nama</td>
+                <td>:</td>
+                <td> <input type="text" class="form-control p-1" id="nama" style="font-size: 15px; border-radius: 8px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 25%;">NIM</td>
+                <td>:</td>
+                <td> <input type="text" class="form-control p-1" id="nim" style="font-size: 15px; border-radius: 8px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 25%;">Pertemuan ke-</td>
+                <td>:</td>
+                <td> <input type="text" class="form-control p-1" id="pertemuan"
+                        style="font-size: 15px; border-radius: 8px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 25%;">Nilai Tugas</td>
+                <td>:</td>
+                <td> <input type="text" class="form-control p-1" id="tugas" style="font-size: 15px; border-radius: 8px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 25%;">Nilai Responsi</td>
+                <td>:</td>
+                <td> <input type="text" class="form-control p-1" id="responsi"
+                        style="font-size: 15px; border-radius: 8px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 25%;">Nilai UTS</td>
+                <td>:</td>
+                <td> <input type="text" class="form-control p-1" id="uts" style="font-size: 15px; border-radius: 8px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 25%;">Nilai UAS</td>
+                <td>:</td>
+                <td><input type="text" class="form-control p-1" id="uas" style="font-size: 15px; border-radius: 8px">
+                </td>
+            </tr>
+        </table>
+        <div class="container-fluid offset-5 text-center my-2">
+            <button class="btn p-1 fw-bold" style="background-color: orange; width:130px; font-size:16px; border-radius: 8px">SIMPAN</button>
+        </div>
+    </div>
+    <!-- <div>
+        <div class="container-fluid col-10 offset-1 text-center my-4">
+            <button class="btn p-1 fw-bold" style="background-color: orange; width:130px; font-size:16px; border-radius: 8px">SIMPAN</button>
+        </div>
+    </div> -->
+
+    <div class="offcanvas offcanvas-start" id="demo">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container">
+                <div class="d-block text-center my-4">
+                    <img class="rounded-circle bg-secondary mx-auto" width="120" height="120" src="https://img.icons8.com/?size=100&id=ABBSjQJK83zf&format=png&color=000000"/>
+                </div>
+                <table class="table">
+                    <tr height="40px">
+                        <td class="text-center"><img width="20" height="20"
+                                src="https://img.icons8.com/?size=100&id=U5JRqX4RSgfj&format=png&color=000000"/></td>
+                        <td><a href="dashboard.html" style="text-decoration: none; color:black;">Dashboard</a></td>
+                    </tr>
+                    <tr height="40px">
+                        <td class="text-center"><img width="20" height="20"
+                                src="https://img.icons8.com/?size=100&id=100103&format=png&color=000000"/></td>
+                        <td><a href="#" style="text-decoration: none; color:black;">Edit Profile</a></td>
+                    </tr>
+                    <tr height="40px">
+                        <td class="text-center"><img width="20" height="20"
+                                src="https://img.icons8.com/?size=100&id=6WfGgDqkTuOu&format=png&color=000000" /></td>
+                        <td><a href="#" style="text-decoration: none; color:black;">Ganti Password</a></td>
+                    </tr>
+                </table>
+                <div class="h4 pb-2 mb-4 border-bottom border-dark mt-5"></div>
+                <div class="container">
+                    <h6 class="text-center">Jadwal Anda Hari Ini!</h6>
+                    <table class="table table-striped">
+                        <tr>
+                            <td>Mata Kuliah</td>
+                            <td>: Pemr.Web 01 (DT196)</td>
+                        </tr>
+                        <tr>
+                            <td>Ruang</td>
+                            <td>: L-7.4.1</td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal</td>
+                            <td>: 23 April 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Lama Sesi</td>
+                            <td>: 01:30:00</td>
+                        </tr>
+                        <tr>
+                            <td>Waktu Masuk</td>
+                            <td>: 08:40:00</td>
+                        </tr>
+                        <tr>
+                            <td>Waktu Selesai</td>
+                            <td>: 10:30:00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
